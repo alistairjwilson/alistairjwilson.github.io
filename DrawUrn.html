@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Colored Balls in Square</title>
+	<style>
+        /* Simple CSS to layout sliders and canvas */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #sliders {
+            width: 80%;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="ballCanvas"></canvas>
+
+<div id="sliders">
+        <input type="range" id="slider1" min="1" max="400" value="50">
+        <input type="range" id="slider2" min="1" max="99" value="50">
+        <input type="range" id="slider3" min="1" max="99" value="50">
+        <button onclick="updateDrawing()">Draw Balls</button>
+</div>
+	
+    <script src="script_us.js"></script>
+</body>
+</html>
